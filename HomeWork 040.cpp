@@ -12,10 +12,11 @@ int main()
     std::cout << "Speed(KM/H) = ";
     std::cin >> Speed;
 
-
-    int InHours = Distance / Speed;
-    int InMinutes = InHours / 60;
-    int InSeconds = InMinutes / 60;
+    Speed *= 1000;
+	int Time = Distance / Speed;
+    int InHours = Time / 3600;
+    int InMinutes = (Time - InHours * 3600) / 60;
+    int InSeconds = Time - (InHours * 3600 + InMinutes * 60);
 
 
     std::cout <<"Human run in hours: " << InHours << "\n";
