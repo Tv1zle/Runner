@@ -13,9 +13,9 @@ int main()
     std::cin >> Speed;
 
 
-    double InHours = Distance / Speed;
-    double InMinutes = InHours * 60;
-    double InSeconds = InMinutes * 60;
+    int InHours = Distance / Speed;
+    int InMinutes = InHours * 60;
+    int InSeconds = InMinutes * 60;
 
 
     std::cout <<"Human run in hours: " << InHours << "\n";
