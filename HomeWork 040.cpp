@@ -13,7 +13,7 @@ int main()
     std::cin >> Speed;
 
     Speed *= 1000;
-	int Time = Distance / Speed;
+    int Time = Distance / Speed;
     int InHours = Time / 3600;
     int InMinutes = (Time - InHours * 3600) / 60;
     int InSeconds = Time - (InHours * 3600 + InMinutes * 60);
